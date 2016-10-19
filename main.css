@@ -7,7 +7,7 @@
     > And the animation-direction is alternate, so it will play from beginning to end, then back to the beginning, then again to the end, and so on.
 */
 
-div {
+#square {
   margin-top: 100px;
   margin-left: 100px;
   width: 200px;
@@ -63,8 +63,11 @@ div {
 }
 
 #line {
+  display: inline-block;
+  margin-top: 100px;
   background-color: coral;
   height: 5px;
+  width: 500px;
   animation: line 0.5s 0.5s infinite alternate;
 }
 
