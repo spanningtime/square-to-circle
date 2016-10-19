@@ -1,3 +1,12 @@
+/*
+  The animation property below is written in shorthand:
+    > The animation name is 'square-to-circle'
+    > The animation-duration is '2s'
+    > The animation-delay is 1s
+    > The animation-iteration-count is infinite, so it will carry on indefinitely
+    > And the animation-direction is alternate, so it will play from beginning to end, then back to the beginning, then again to the end, and so on.
+*/
+
 div {
   margin-top: 100px;
   margin-left: 100px;
@@ -6,6 +15,24 @@ div {
   background-color: coral;
   animation: square-to-circle 2s 1s infinite alternate;
 }
+
+/*@-webkit-keyframes colors {
+  0% {
+    background-color: coral;
+  }
+  100% {
+    background-color: lightcoral;
+  }
+  50% {
+    background-color: indianred;
+  }
+  75% {
+    background-color: lightcoral;
+  }
+  100% {
+    background-color: darksalmon;
+  }
+}*/
 
 @-webkit-keyframes square-to-circle {
   0% {
@@ -32,5 +59,22 @@ div {
     border-radius: 50%;
     background: darksalmon;
     transform:rotate(180deg);
+  }
+}
+
+#line {
+  background-color: coral;
+  height: 5px;
+  animation: line 0.5s 0.5s infinite alternate;
+}
+
+@-webkit-keyframes line {
+  from {
+    width: 0px;
+    background-color: yellow;
+  }
+  to {
+    width: 500px;
+    background-color: coral;
   }
 }
